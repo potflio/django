@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit" method="POST">
+        {% csrf_token %}
+        <label for="name">Username</label>
+        <input type="text" name="name" id=""><br><br>
+        <label for="skills">Skills</label>
+        <input type="radio" value="programming" name="skills">Programming
+        <input type="radio" value="design" name="skills">Design <br><br>
+        <label for="hobbies">Hobbies</label>
+        <input type="checkbox" value="gaming" name="hobbies">Gaming
+        <input type="checkbox" value="football" name="hobbies">Football
+        <input type="checkbox" value="swimming" name="hobbies">Swimming
+        <button type="submit">click me</button>
+    </form>
+</body>
+</html>
